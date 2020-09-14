@@ -1,6 +1,22 @@
 {
-  "name": "typescript",
+  "name": "typescript-test",
   "version": "0.0.0",
+  "scripts":{
+    "build": "npx webpack --config=webpack.config.js",
+    "test": "jasmine-ts --config=jasmine.json"
+  },
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jasmine": "^3.5.14",
+    "jasmine": "^3.6.1",
+    "jasmine-spec-reporter": "^5.0.2",
+    "jasmine-ts": "^0.3.0",
+    "ts-loader": "^8.0.3",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
